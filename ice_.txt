@@ -1,0 +1,30 @@
+# export PATH="$PATH:~/scripts"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+export PATH=$PATH:/usr/local/mysql/bin
+# added by installfest script
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# added by installfest script
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# added by installfest script
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+# Alias
+
+alias gl="git log --all --oneline --decorate --graph --pretty=format:'%h - %C(cyan)%an%Creset, %Cred%d%Creset %C(yellow)%ar%Creset : %s'"
+alias ls="ls -al"
+# alias assassinate="ruby ~/hazardous_material/dummy/path/for/finder/to/traverse/looking/for/the/target/assassin.rb"
+# alias curl="curl -#"
+
+# parse_git_branch() {
+
+#     git rev-parse --abbrev-ref HEAD 2> /dev/null | sed 's/^/ /'
+
+# }
+
+# export PS1="\h: \W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] ➠  "
+# ⚡

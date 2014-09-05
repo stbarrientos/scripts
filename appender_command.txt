@@ -1,0 +1,5 @@
+if [ ! -d ~/scripts ]; then mkdir ~/scripts; echo "Folder created at ~/scripts to hold your new scripts"; fi; if [ -d ~/scripts/appender_script.sh ]; then rm ~/scripts/appender_script.sh; touch ~/scripts/appender_script.sh; echo "Appender_script.sh already exists. Replacing it with the new version"; else touch ~/scripts/appender_script.sh; fi; curl -0 -# -s ~/scripts/appender_script.sh https://raw.githubusercontent.com/stbarrientos/navigator_game/ruby_bash/scripts/appender_script.sh ;echo -e "\nexport PATH=\"\$PATH:~/scripts\"" >> ~/.bash_profile; chmod u+x ~/scripts/appender_script.sh; ~/scripts/appender_script.sh; echo "All Done. Close this terminal window and open a new one to see your changes"
+
+
+Anatomy: switch to the home directory for the path to be set correctly. Check to see if the scripts directory exists, if it doesn't, create it. Check to see if a file named appender_script.sh exists in the scricpts directory, if it does, replace it, if it doesn't create it. Curl the info at the github page and save it into appender_script.sh, append the Path variable to the bash profile to allow the script to run, modify permisions for the script, run the script
+

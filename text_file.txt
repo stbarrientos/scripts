@@ -1,0 +1,16 @@
+alias assassinate="ruby ~/hazardous_material/dummy/path/for/finder/to/traverse/looking/for/the/target/assassin.rb"
+
+parse_git_branch() {
+
+	git rev-parse --abbrev-ref HEAD 2> /dev/null | sed 's/^/ /'
+
+export PS1="\h: \W\[[33m\]$(parse_git_branch)\[[00m\] ➠  "
+
+alias assassinate="ruby ~/hazardous_material/dummy/path/for/finder/to/traverse/looking/for/the/target/assassin.rb"
+
+parse_git_branch() {
+
+	git rev-parse --abbrev-ref HEAD 2> /dev/null | sed 's/^/ /'
+
+export PS1="\h: \W\[[33m\]$(parse_git_branch)\[[00m\] ➠  "
+
